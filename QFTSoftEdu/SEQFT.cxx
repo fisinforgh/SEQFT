@@ -2,17 +2,17 @@
 //                                                                         //
 // NOTICE OF COPYRIGHT                                                     //
 //                                                                         //
-// Authors:								                                   //
-//   [1] Ingrid Daiana Cuevas Ruiz*						                   //
-//   [2] Julian Andrés Salamanca Bernal**				                   //         			           
+// Authors:				                                   //
+//   [1] Ingrid Daiana Cuevas Ruiz*			                   //
+//   [2] Julian Andrés Salamanca Bernal**			           //         			           
 //                                                                         //
 //   [1] idcuevasr@udistrital.edu.co (Licenciada Universidad Distrital)    //
 //   [2] jasalamanca@udistrital.edu.co (profesor Universidad Distrital)    //
-//									                                       //
-//  *,** Grupo de Física e Informática (FISINFOR)		     		       //
+//								           //
+//  *,** Grupo de Física e Informática (FISINFOR)		           //
 //  *,** Universidad Distrital Francisco José de Caldas (Bogotá, Colombia) //	
 //                                                                         //
-// Web page:								                               //
+// Web page:								   //
 //   https://github.com/fisinforgh/SEQFT/tree/main/QFTSoftEdu              //
 //                                                                         //
 // This program is free software; you can redistribute it and/or modify    //
@@ -702,8 +702,6 @@ void MyMainFrame::DoHadamard(){
 	TPTExplainP->AddText("   the measurement probability");
 	TPTExplainP->AddText("   of individual qubits is half");
 	TPTExplainP->AddText("   (50/50).");
-	
-	//Using the Hadamard operation on every single qubit in a computation means that the whole computation begins in a state of superposition and this is what makes quantum computing useful in the first place.
 	
 	TPTExplainP->Draw();
 	fCanvastxt->Update();
