@@ -2,17 +2,17 @@
 #                                                                          #
 # NOTICE OF COPYRIGHT                                                      #
 #                                                                          #
-# Authors:								                                   #
-#   [1] Ingrid Daiana Cuevas Ruiz*						                   # 
-#   [2] Julian Andrés Salamanca Bernal**				                   #         			           
+# Authors:					                           #
+#   [1] Ingrid Daiana Cuevas Ruiz*				           # 
+#   [2] Julian Andrés Salamanca Bernal**			           #         			           
 #                                                                          #
 #   [1] idcuevasr@udistrital.edu.co (Licenciada Universidad Distrital)     #
 #   [2] jasalamanca@udistrital.edu.co (profesor Universidad Distrital)     #
-#									                                       #
-#  *,** Grupo de Física e Informática (FISINFOR)		     		       #
+#					                                   #
+#  *,** Grupo de Física e Informática (FISINFOR)		     	   #
 #  *,** Universidad Distrital Francisco José de Caldas (Bogotá, Colombia)  #	
 #                                                                          #
-# Web page:								                                   #
+# Web page:					                           #
 #   https://github.com/fisinforgh/SEQFT/tree/main/QFTSoftEdu               #
 #                                                                          #
 # This program is free software; you can redistribute it and/or modify     #
