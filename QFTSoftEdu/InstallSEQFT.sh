@@ -190,7 +190,7 @@ echo " "
 if [ -f $dirPATH/$tarFILE ];
 then
     (echo "Please click CONTINUE to install SEQFT"
-    echo "$tarFILE successfully downloaded!!") | (zenity --text-info --width=800 --height=400  --title="SEQFT install" \
+    echo "$tarFILE successfully downloaded!!") | (zenity --text-info --width=500 --height=300  --title="SEQFT install" \
 						       --ok-label='CONTINUE' --cancel-label='Exit install')
     if [ $? -eq 1 ]; then
 	echo "Exit"
