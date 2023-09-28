@@ -161,25 +161,25 @@ fi
 
 #----------------------------------------------------------------------------------------------------------------------------#
 
-dirPATH=$(zenity --file-selection   --directory --title="SEQFT install Choose a Installation Folder" --width=800 --height=400 )
+dirPATH=$(zenity --file-selection   --directory --title="SEQFT install Choose a Installation Folder" --width=400 --height=300 )
 
 (zenity --info --text="Please click CONTINUE to select Desktop Folder" --title="SEQFT install choose Desktop Folder" --ok-label='CONTINUE' --width=800 --height=400 )
 
-dirDESK=$(zenity --file-selection   --directory --title="SEQFT install choose a Desktop Folder" --width=800 --height=400)
+dirDESK=$(zenity --file-selection   --directory --title="SEQFT install choose a Desktop Folder" --width=400 --height=300)
 
 tarFILE="QFTSoftEdu.tar"
 
 pwd
 echo "Installation folder: $dirPATH"
 echo "Path to Desktop folder: $dirDESK"
-echo "Downloading HDFo source files: ... "
+echo "Downloading QFT source files: ... "
 
 ####FALTA CAMBIAR CUANDO SE SUBA
 echo "wget https://raw.githubusercontent.com/fisinforgh/SEQFT/main/$tarFILE -P $dirPATH"
 echo "Wait..."
 
-(wget -O $dirPATH/$tarFILE https://raw.githubusercontent.com/fisinforgh/SEQFT/main/$tarFILE) | zenity --progress --width=800 --height=400 --auto-close \
-										     --title="SEQFT_1.0 Install" \
+(wget -O $dirPATH/$tarFILE https://raw.githubusercontent.com/fisinforgh/SEQFT/main/$tarFILE) | zenity --progress --width=400 --height=300 --auto-close \
+										     --title="SEQFT Install" \
 										     --text="Downloading QFTSoftEdu... Please wait ..." \
 										     --percentage=10
 echo " "
@@ -208,7 +208,7 @@ fi
 
 #----------------------------------------------------------------------------------------------------------------------------#
 
-nameDIR="SEQFT"
+nameDIR="QFTSoftEdu"
 FILE="SEQFT"
 
 cd $dirPATH
@@ -221,14 +221,14 @@ if [ -f "$FILE" ]; then
     rm $FILE
     ($pathROOTCLING -f SEQFTDict.cxx -c SEQFT.h SEQFTLinkDef.h
      g++ -o SEQFT SEQFT.cxx SEQFTDict.cxx `$pathROOTCONFIG --cflags --glibs` -lGeom) | zenity --progress --width=800 --height=400 --auto-close \
-												    --title="SEQFT1.0 Install" \
-												    --text="Compiling SEQFT_1.0 software" \
+												    --title="SEQFT Install" \
+												    --text="Compiling SEQFT software" \
 												    --percentage=5
 else
     ($pathROOTCLING -f SEQFTDict.cxx -c SEQFT.h SEQFTLinkDef.h
      g++ -o SEQFT SEQFT.cxx SEQFTDict.cxx `$pathROOTCONFIG --cflags --glibs` -lGeom) | zenity --progress --width=800 --height=400 --auto-close \
-												    --title="SEQFT1.0 Install" \
-												    --text="Compiling SEQFT_1.0 software" \
+												    --title="SEQFT Install" \
+												    --text="Compiling SEQFT software" \
 												    --percentage=5
 fi
 
@@ -240,7 +240,7 @@ else
     echo "Something went WRONG. Please check requirements"
     echo "and try again"
     (zenity --info --text="Please check g++ compiler and try it again "\
-	    --title="SEQFT install ERROR" --ok-label='Exit install' --width=800 --height=400 )
+	    --title="SEQFT install ERROR" --ok-label='Exit install' --width=400 --height=300 )
     if [ $? -eq 0 ]; then
 	echo "Exit"
 	exit 2
