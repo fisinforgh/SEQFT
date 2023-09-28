@@ -161,11 +161,11 @@ fi
 
 #----------------------------------------------------------------------------------------------------------------------------#
 
-dirPATH=$(zenity --file-selection   --directory --title="SEQFT install Choose a Installation Folder" --width=400 --height=300 )
+dirPATH=$(zenity --file-selection   --directory --title="SEQFT install Choose a Installation Folder" --width=400 --height=200 )
 
-(zenity --info --text="Please click CONTINUE to select Desktop Folder" --title="SEQFT install choose Desktop Folder" --ok-label='CONTINUE' --width=800 --height=400 )
+(zenity --info --text="Please click CONTINUE to select Desktop Folder" --title="SEQFT install choose Desktop Folder" --ok-label='CONTINUE' --width=400 --height=200 )
 
-dirDESK=$(zenity --file-selection   --directory --title="SEQFT install choose a Desktop Folder" --width=400 --height=300)
+dirDESK=$(zenity --file-selection   --directory --title="SEQFT install choose a Desktop Folder" --width=400 --height=200)
 
 tarFILE="QFTSoftEdu.tar"
 
@@ -178,7 +178,7 @@ echo "Downloading QFT source files: ... "
 echo "wget https://raw.githubusercontent.com/fisinforgh/SEQFT/main/$tarFILE -P $dirPATH"
 echo "Wait..."
 
-(wget -O $dirPATH/$tarFILE https://raw.githubusercontent.com/fisinforgh/SEQFT/main/$tarFILE) | zenity --progress --width=400 --height=300 --auto-close \
+(wget -O $dirPATH/$tarFILE https://raw.githubusercontent.com/fisinforgh/SEQFT/main/$tarFILE) | zenity --progress --width=400 --height=200 --auto-close \
 										     --title="SEQFT Install" \
 										     --text="Downloading QFTSoftEdu... Please wait ..." \
 										     --percentage=10
@@ -240,7 +240,7 @@ else
     echo "Something went WRONG. Please check requirements"
     echo "and try again"
     (zenity --info --text="Please check g++ compiler and try it again "\
-	    --title="SEQFT install ERROR" --ok-label='Exit install' --width=400 --height=300 )
+	    --title="SEQFT install ERROR" --ok-label='Exit install' --width=400 --height=200 )
     if [ $? -eq 0 ]; then
 	echo "Exit"
 	exit 2
