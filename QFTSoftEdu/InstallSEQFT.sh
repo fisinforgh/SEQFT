@@ -12,7 +12,7 @@
 #   [3] djrodriguezp@udistrital.edu.co (profesor Universidad Distrital)         #
 #									                                            #
 #  *,** Grupo de Física e Informática (FISINFOR)		                        #
-#  ** Grupo de Laboratorio de Fuentes Alternas de Energía (LIFAE)	            #
+#  *** Grupo de Laboratorio de Fuentes Alternas de Energía (LIFAE)	            #
 #  *,**,*** Universidad Distrital Francisco José de Caldas (Bogotá, Colombia)   #	
 #                                                                               #
 # Web page:						                                                #
